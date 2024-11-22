@@ -35,3 +35,40 @@ sudo make -j8  # Adjust the -j flag based on the number of CPU cores.
 
 ##### Step 5: Install the Kernel and Update GRUB This step will be done tomorrow.
 ## Don't worry your grub will be safe :)
+
+
+# Configure git send-email
+##### install git send-email
+```
+apt install git-email
+```
+##### setup ~/.gitconfig
+```
+[user]
+    name = First Last
+    email = my_email@gmail.com
+
+[format]
+	signoff = true
+
+[core]
+	editor = vim
+
+[sendemail]
+    smtpServer = smtp.gmail.com
+    smtpServerPort = 587
+    smtpEncryption = tls
+    smtpUser = my_email@gmail.com
+    smtppass = xxxxxxxxxxxxxxxxxx
+
+[credential]
+    helper = store
+```
+##### Setup your mail client if its gmail if not you are on your own.
+```
+Resources : https://gist.github.com/winksaville/dd69a860d0d05298d1945ceff048ce46
+          : https://stackoverflow.com/questions/68238912/how-to-configure-and-use-git-send-email-to-work-with-gmail-to-email-patches-to
+
+```
+
+
