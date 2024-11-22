@@ -36,6 +36,27 @@ sudo make -j8  # Adjust the -j flag based on the number of CPU cores.
 ##### Step 5: Install the Kernel and Update GRUB This step will be done tomorrow.
 ## Don't worry your grub will be safe :)
 
+##### Step 5: Install new build.
+```
+sudo make modules_install -j 4 && sudo make install
+```
+- Installs the kernel modules (from make modules) into /lib/modules/<kernel-version>.
+- Installs the compiled kernel into the boot directory (typically /boot)
+
+##### Step 6: Update GRUB
+```
+sudo update-grub
+```
+- Check you bootloader config in /boot/grub/grub.cfg
+
+
+
+
+
+
+
+
+
 
 # Configure git send-email
 ##### install git send-email
