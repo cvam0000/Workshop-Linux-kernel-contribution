@@ -1,4 +1,4 @@
-# Rootconf-linuxKernelCompilation
+# linuxKernelCompilation
 
 #### Guide: Building and Installing a Linux Kernel from Source
 
