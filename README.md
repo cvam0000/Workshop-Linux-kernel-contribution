@@ -15,7 +15,7 @@ sudo pacman -S base-devel bc coreutils cpio gettext initramfs kmod libelf ncurse
 
 ##### Step 1: Clone the Linux Kernel Source
 ```
-git clone https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/ && cd linux
+git clone --depth=1 https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/ && cd linux
 ```
 
 ##### Step 2: Copy the Current Kernel Configuration
